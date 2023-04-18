@@ -6,7 +6,7 @@ void main()
     printf("Enter the size of the array");
     scanf("%d",&n);
     ptr =(int*)malloc(n*sizeof(int));
-    ptr = &a[0];
+    // ptr = &a[0];
     for ( i = 0; i < n; i++)
     {
         printf("Enter Element");
@@ -14,11 +14,15 @@ void main()
         ptr++;
     }
     printf("Entered array elements\n");
-    ptr = &a[0];
+    // ptr = &a[0];
+    // for ( i = 0; i < n; i++)
+    // {
+    //     printf("%d\n",*ptr);
+    //     ptr++;
+    // }
     for ( i = 0; i < n; i++)
     {
-        printf("%d\n",*ptr);
-        ptr++;
+        printf("%d\n",a[i]);
     }
     
 }
