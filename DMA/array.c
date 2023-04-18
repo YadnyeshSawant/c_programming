@@ -24,5 +24,5 @@ void main()
     {
         printf("%d\n",a[i]);
     }
-    
+    printf("DONE WITH THE CODE");
 }
