@@ -3,7 +3,7 @@
 void main()
 {
     int a[50], n,i,*ptr,sum=0,avg;
-    printf("Enter the size of the array:\n");
+    printf("Enter the size of the array: ");
     scanf("%d",&n);
     ptr=(int*)malloc(n*sizeof(int));
     for(i=0;i<n;i++)
