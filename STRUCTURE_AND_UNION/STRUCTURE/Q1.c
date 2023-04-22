@@ -19,7 +19,7 @@ void main()
     scanf("%s",S.add);
     
     printf("Enter percentage:\t");
-    scanf("%d",S.per);
+    scanf("%d",&S.per);
     
     // printf("Enter age:\t");
     // scanf("%d",S.age);
