@@ -5,8 +5,6 @@ void main()
 {
     int ch,i;
     char s1[50],s2[50],ch1,*p;
-    while (ch!=0)  
-    {
     printf("\n----------------MENU-------------\n");
     printf("1:Length Of the string\n");
     printf("2:Reverse a string\n");
@@ -68,6 +66,5 @@ void main()
         break;
     default: printf("INVALID CHOICE");
         break;
-    }
     }
 }
