@@ -39,6 +39,9 @@ void main()
         printf("%d\t%s\t%s\t%d\t%d\n",S[i].rno,S[i].name,S[i].add,S[i].per,S[i].age);
     }
     
+}
+    //THIS IS THE COMMENT OUT CODE DONOT REFER THIS!!!
+
     // for ( i = 0; i < n; i++)
     // {
     // printf("%d\t\t\t%s\t\t\t%s\t\t\t%d\t\t\t%d\n",S[i].rno,S[i].name,S[i].add,S[i].per,S[i].age);
@@ -56,4 +59,3 @@ void main()
         //     printf("%s\t\t\t%s",S[i].name,S[i].add);
         // printf("\t\t\t%d\t\t\t%d\n",S[i].per,S[i].age);
     // }
-}
