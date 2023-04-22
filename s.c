@@ -4,7 +4,8 @@
 void main()
 {
     int ch,i;
-    char s1[50],s2[50],ch1,*p;
+    char s1[50],s2[50],*p;
+    char s;
     printf("\n----------------MENU-------------\n");
     printf("1:Length Of the string\n");
     printf("2:Reverse a string\n");
@@ -53,8 +54,8 @@ void main()
     case 6: printf("Enter the string:\t");
             scanf("%s",s1);
             printf("Enter the character:\t");
-            scanf("%c",&ch1);
-            p = strchr(s1,ch1);
+            scanf("%c",s);
+            p = strchr(s1,s);
             printf("string = %s",p);
         break;
     case 7: printf("Enter the string:\t");
