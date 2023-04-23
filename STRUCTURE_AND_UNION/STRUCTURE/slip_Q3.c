@@ -10,7 +10,7 @@ struct cricketer
 void main()
 {
     int n,i;
-    printf("ENTER THE NUMBER OF ENTERIES:\t");
+    printf("ENTER THE NUMBER OF ENTERIES");
     scanf("%d",&n);
 
     for ( i = 0; i < n; i++)
