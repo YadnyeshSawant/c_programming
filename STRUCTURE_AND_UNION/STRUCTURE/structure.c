@@ -50,6 +50,7 @@ void main()
         //     {
         //         printf("\t\t%s",S[i].name);
         //     }
+        // This is another way...
         // printf("%s\t\t\t%d\t\t\t%d\n",S[i].add,S[i].per,S[i].age);
         //  printf("%d\t",S[i].rno);
         //     if(strlen(S[i].name)>16)
