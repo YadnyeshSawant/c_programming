@@ -25,16 +25,14 @@ void main()
         scanf("%d",&player[i].avg);
         
         printf("ENTER PLAYERS HIGH SCORE:\t");
-        scanf("%s",player[i].pname);
-
-        printf("\nPLAYER DETAILS\n");
-        printf("\nPLAYER NAME\tTEAM NAME\tAVERAGE SCORE\tHIGH SCORE\n");
-        printf("------------------------------------------------------\n");
-        for ( i = 0; i < n; i++)
-        {
-            printf("%S\t%s\t%d\t%d\n",player[i].pname,player[i].team_name,player[i].avg,player[i].high_score);
-        }
+        scanf("%s",player[i].high_score);
     }
-    
+    printf("\nPLAYER DETAILS\n");
+    printf("\nPLAYER NAME\tTEAM NAME\tAVERAGE SCORE\tHIGH SCORE\n");
+    printf("------------------------------------------------------\n");
+    for ( i = 0; i < n; i++)
+    {
+        printf("%S\t%s\t%d\t%d\n",player[i].pname,player[i].team_name,player[i].avg,player[i].high_score);
+    }
 
 }
