@@ -27,7 +27,7 @@ void main()
     printf("------------------------------------------------------\n");
     for ( i = 0; i < n; i++)
     {
-        printf("%d\t\t%s\t\t%s\n",emp[i].empno,emp[i].ename,emp[i].salary);
+        printf("%d\t\t%s\t\t%d\n",emp[i].empno,emp[i].ename,emp[i].salary);
     }
     
 }
