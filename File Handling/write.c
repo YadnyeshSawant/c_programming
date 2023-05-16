@@ -22,9 +22,9 @@ void main()
         
         printf("Enter the marks\t");
         scanf("%d",&s[i].marks);
-        fwrite(&s,sizeof(s),n,fp);
-        printf("\n DATA WRITTEN SUCCESSFULLY....");
     }
+        fwrite(&s,sizeof(s),n,fp);
+        printf("\n DATA WRITTEN SUCCESSFULLY....\n");
     for ( i = 0; i < n; i++)
     {
         fread(&s,sizeof(s),n,fp);
