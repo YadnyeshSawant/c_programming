@@ -4,27 +4,35 @@ struct student
     int rollno;
     char name[10];
     int marks;
-}s;
+}s[10];
 void main()
 {
     int n,i;
     FILE *fp;
-    fopen("student.txt","w");
+    fp = fopen("student.txt","r+");
     printf("Enter the number of entries\t");
     scanf("%d",&n);
     for ( i = 0; i < n; i++)
     {
-        printf("Enter the rollno\t");
-        scanf("%d",&s.rollno);
+        printf("\nEnter the rollno\t");
+        scanf("%d",&s[i].rollno);
         
         printf("Enter the namee\t");
-        scanf("%s",s.name);
+        scanf("%s",s[i].name);
         
         printf("Enter the marks\t");
-        scanf("%d",&s.marks);
+        scanf("%d",&s[i].marks);
+        fwrite(&s,sizeof(s),n,fp);
+        printf("\n DATA WRITTEN SUCCESSFULLY....");
     }
-    fwrite(&s,sizeof(s),1,fp);
-    printf("\n DATA WRITTEN SUCCESSFULLY....");
+    for ( i = 0; i < n; i++)
+    {
+        fread(&s,sizeof(s),n,fp);
+
+        printf("\nEnter the rollno\t%d\n",s[i].rollno);
+        printf("Enter the namee\t%s\n",s[i].name);
+        printf("Enter the marks\t%d\n",s[i].marks);
+    }
     fclose(fp);
 }
 
