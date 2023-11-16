@@ -3,8 +3,8 @@
 #include<stdlib.h>
 void copy(char str1[], char str2[]);     // Function to copy one string into another
 void comp(char str1[], char str2[]);     // Function to compare two strings
-int length(char str[]);                       // Function to check the length of the string  
-void case_change(char str[]);                 // Function to change the case of the string
+int length(char str[]);                  // Function to check the length of the string  
+void case_change(char str[]);            // Function to change the case of the string
 void main()
 {
     char s1[100],s2[100];
